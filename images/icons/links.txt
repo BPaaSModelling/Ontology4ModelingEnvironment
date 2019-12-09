@@ -1,0 +1,10 @@
+sticky-note: https://www.flaticon.com/free-icon/sticky-note_31547?term=sticky%20note&page=1&position=16 
+link: https://www.flaticon.com/free-icon/link_455691?term=link&page=1&position=11 
+check: https://www.flaticon.com/free-icon/check_25643?term=check%20mark&page=1&position=15
+strength: https://www.flaticon.com/free-icon/strength_1787065 
+tag: https://www.flaticon.com/free-icon/tag_126422?term=price%20tag&page=1&position=8 
+giftbox: https://www.flaticon.com/free-icon/gift-box-with-a-ribbon_610?term=gift%20box&page=1&position=17
+deal: https://www.flaticon.com/free-icon/deal_1418675
+devices: https://www.flaticon.com/free-icon/devices_115756
+group-of-users-silhouette: https://www.flaticon.com/free-icon/group-of-users-silhouette_33715?term=group%20of%20people&page=1&position=7 
+money: https://www.flaticon.com/free-icon/money-bag-with-dollar-symbol_61584 
