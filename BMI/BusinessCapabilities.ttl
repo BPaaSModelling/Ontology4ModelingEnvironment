@@ -13,9 +13,39 @@
   owl:imports <http://ikm-group.ch/bm> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
+bc:AdaptableStructure
+  rdf:type bc:StrategicChange ;
+  rdfs:label "Adaptable Structure" ;
+.
+bc:AlignmentOfStrategy
+  rdf:type bc:EntryStrategiesAndTiming ;
+  rdfs:label "Alignment Of Strategy With Future Direction of the marketplace" ;
+.
+bc:AnalysisAndAnalyticFocus
+  rdf:type owl:Class ;
+  rdfs:label "Analysis And Analytic Focus" ;
+  rdfs:subClassOf bc:DynamicCapabilities ;
+.
+bc:AvailableResourcesForInnovation
+  rdf:type bc:StrategicChange ;
+  rdfs:label "Available Resources For Innovation" ;
+.
+bc:AwareOfOpportunities
+  rdf:type bc:EntryStrategiesAndTiming ;
+  rdfs:label "Aware Of Opportunities" ;
+.
+bc:BottomUpDecisionMaking
+  rdf:type bc:AnalysisAndAnalyticFocus ;
+  rdfs:label "Bottom Up Decision Making" ;
+.
 bc:BusinessCapabilities
   rdf:type owl:Class ;
   rdfs:subClassOf owl:Thing ;
+.
+bc:Collaboration
+  rdf:type owl:Class ;
+  rdfs:label "Collaboration" ;
+  rdfs:subClassOf bc:DynamicCapabilities ;
 .
 bc:Communication
   rdf:type bc:Skills ;
@@ -40,6 +70,32 @@ bc:Courtesy
   rdfs:comment "manners, etiquette, business etiquette, gracious, says please and thank you, respectful" ;
   rdfs:label "Courtesy" ;
 .
+bc:Culture
+  rdf:type owl:Class ;
+  rdfs:label "Culture" ;
+  rdfs:subClassOf bc:DynamicCapabilities ;
+.
+bc:CustomerOriented
+  rdf:type bc:EntryStrategiesAndTiming ;
+  rdfs:label "Customer Oriented" ;
+.
+bc:DefinedCompetenceDevelopment
+  rdf:type bc:StrategicChange ;
+  rdfs:label "Defined Competence Development" ;
+.
+bc:DefinedProcessesAndApplications
+  rdf:type bc:AnalysisAndAnalyticFocus ;
+  rdfs:label "Defined Processes And Applications" ;
+.
+bc:DefinedValue
+  rdf:type bc:AnalysisAndAnalyticFocus ;
+  rdfs:label "Defined Value" ;
+.
+bc:Diversification
+  rdf:type owl:Class ;
+  rdfs:label "Diversification" ;
+  rdfs:subClassOf bc:DynamicCapabilities ;
+.
 bc:DynamicCapabilities
   rdf:type owl:Class ;
   rdfs:subClassOf bc:BusinessCapabilities ;
@@ -52,10 +108,44 @@ bc:EmotionsAttitude
   rdf:type owl:Class ;
   rdfs:subClassOf bc:MotivationAttitude ;
 .
+bc:EncouragedCuriosity
+  rdf:type bc:Culture ;
+  rdfs:label "Encouraged Curiosity" ;
+.
+bc:EntryStrategiesAndTiming
+  rdf:type owl:Class ;
+  rdfs:label "Entry Strategies And Timing" ;
+  rdfs:subClassOf bc:DynamicCapabilities ;
+.
+bc:EstablishedInternationalCollaboration
+  rdf:type bc:Collaboration ;
+  rdfs:label "Established International Collaboration" ;
+.
+bc:EstablishedProcessToLearnFromMarket
+  rdf:type bc:Diversification ;
+  rdfs:label "Established Process To Learn From Market" ;
+.
+bc:EstablishedRewardsAndIncentives
+  rdf:type bc:Culture ;
+  rdfs:label "Established Rewards And Incentives" ;
+.
+bc:EstablishedTestingMechanisms
+  rdf:type bc:Diversification ;
+  rdfs:label "Established Testing Mechanisms" ;
+.
+bc:EstablishedTraningForNewRequirements
+  rdf:type bc:FocusAndSpecialization ;
+  rdfs:label "Established Traning For New Requirements" ;
+.
 bc:Flexibility
   rdf:type bc:Competencies ;
   rdfs:comment "adaptability, willing to change, lifelong learner, accepts new things, adjusts, teachable" ;
   rdfs:label "Flexibility" ;
+.
+bc:FocusAndSpecialization
+  rdf:type owl:Class ;
+  rdfs:label "Focus And Specialization" ;
+  rdfs:subClassOf bc:DynamicCapabilities ;
 .
 bc:FunctionalCapabilities
   rdf:type owl:Class ;
@@ -82,10 +172,30 @@ bc:Integrity
   rdfs:comment "honest, ethical, high morals, has personal values, does what’s right" ;
   rdfs:label "Integrity" ;
 .
+bc:InterestInTechnology
+  rdf:type bc:FocusAndSpecialization ;
+  rdfs:label "Interest In Technology" ;
+.
 bc:Interpersonal
   rdf:type bc:Competencies ;
   rdfs:comment "nice, personable, sense of humor, friendly, nurturing, empathetic, has self-control, patient, sociability, warmth, social skills" ;
   rdfs:label "Interpersonal" ;
+.
+bc:KnowledgeOfNewMethodsAndTools
+  rdf:type bc:FocusAndSpecialization ;
+  rdfs:label "Knowledge Of New Methods And Tools" ;
+.
+bc:KnowledgeToShapeInnovation
+  rdf:type bc:EntryStrategiesAndTiming ;
+  rdfs:label "Knowledge To Shape Innovation" ;
+.
+bc:KnownUSP
+  rdf:type bc:Diversification ;
+  rdfs:label "Known USP" ;
+.
+bc:LearningCultureThroughMistakes
+  rdf:type bc:Culture ;
+  rdfs:label "Learning Culture Through Mistakes" ;
 .
 bc:MarketShare
   rdf:type owl:Class ;
@@ -94,6 +204,26 @@ bc:MarketShare
 bc:MotivationAttitude
   rdf:type owl:Class ;
   rdfs:subClassOf bc:HBCAcquisition ;
+.
+bc:NoAvoidance
+  rdf:type bc:AnalysisAndAnalyticFocus ;
+  rdfs:label "No Avoidance of important tasks" ;
+.
+bc:OpenCommunicationCulture
+  rdf:type bc:Culture ;
+  rdfs:label "Open Communication Culture" ;
+.
+bc:OpenCooperationForAllLevels
+  rdf:type bc:Collaboration ;
+  rdfs:label "Open Cooperation For All Levels" ;
+.
+bc:OpenCoordinationForAllLevels
+  rdf:type bc:Collaboration ;
+  rdfs:label "Open Coordination For All Levels" ;
+.
+bc:OpenInformationAccessibility
+  rdf:type bc:Collaboration ;
+  rdfs:label "Open Information Accessibility" ;
 .
 bc:PersonalAttributes
   rdf:type owl:Class ;
@@ -130,6 +260,10 @@ bc:Responsibility
   rdfs:comment "accountable, reliable, gets the job done, resourceful, self-disciplined, wants to do well, conscientious, common sense" ;
   rdfs:label "Responsibility" ;
 .
+bc:RiskWilling
+  rdf:type bc:Diversification ;
+  rdfs:label "Risk Willing" ;
+.
 bc:SelfDevelopment
   rdf:type owl:Class ;
   rdfs:subClassOf bc:PersonalProfessionalExperience ;
@@ -137,6 +271,11 @@ bc:SelfDevelopment
 bc:Skills
   rdf:type owl:Class ;
   rdfs:subClassOf bc:HBCElement ;
+.
+bc:StrategicChange
+  rdf:type owl:Class ;
+  rdfs:label "Strategic Change" ;
+  rdfs:subClassOf bc:DynamicCapabilities ;
 .
 bc:StrategiesRoutines
   rdf:type owl:Class ;
@@ -155,6 +294,14 @@ bc:Teamwork
 bc:TechniquesMethods
   rdf:type owl:Class ;
   rdfs:subClassOf bc:PersonalProfessionalPractice ;
+.
+bc:TechnologyRelevance
+  rdf:type bc:FocusAndSpecialization ;
+  rdfs:label "Technology is an important requirement" ;
+.
+bc:TransparentChangeCommunication
+  rdf:type bc:StrategicChange ;
+  rdfs:label "Transparent Change Communication" ;
 .
 bc:WorkEthic
   rdf:type bc:Competencies ;

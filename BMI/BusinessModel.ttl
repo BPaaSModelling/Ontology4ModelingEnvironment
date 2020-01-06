@@ -39,8 +39,9 @@ bm:Advertising
   rdfs:subClassOf bm:RevenueStreamTypes ;
 .
 bm:AfterSales
-  rdf:type bm:ChannelPhases ;
-  rdfs:label "5. After sales" ;
+  rdf:type owl:Class ;
+  rdfs:label "5. After Sales" ;
+  rdfs:subClassOf bm:ChannelPhases ;
 .
 bm:AssetSale
   rdf:type owl:Class ;
@@ -58,8 +59,9 @@ bm:AutomatedServices
   rdfs:label "Automated Services" ;
 .
 bm:Awareness
-  rdf:type bm:ChannelPhases ;
+  rdf:type owl:Class ;
   rdfs:label "1. Awareness" ;
+  rdfs:subClassOf bm:ChannelPhases ;
 .
 bm:BMValueTypes
   rdf:type owl:Class ;
@@ -84,12 +86,12 @@ bm:ChannelOwner
 bm:ChannelPhases
   rdf:type owl:Class ;
   rdfs:label "Channel Phases" ;
-  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf bm:CustomerInterfaceParts ;
 .
 bm:ChannelTypes
   rdf:type owl:Class ;
   rdfs:label "Channel Types" ;
-  rdfs:subClassOf bm:CustomerInterfaceParts ;
+  rdfs:subClassOf owl:Thing ;
 .
 bm:CoCreationWithBot
   rdf:type bm:NonHumanInteraction ;
@@ -182,8 +184,9 @@ bm:DedicatedPersonalAssistance
   rdfs:label "Dedicated Personal Assistance" ;
 .
 bm:Delivery
-  rdf:type bm:ChannelPhases ;
+  rdf:type owl:Class ;
   rdfs:label "4. Delivery" ;
+  rdfs:subClassOf bm:ChannelPhases ;
 .
 bm:Design
   rdf:type bm:QualitativeValueOfferingTypes ;
@@ -223,8 +226,9 @@ bm:EconomiesOfScope
   rdfs:label "Economies of Scope" ;
 .
 bm:Evaluation
-  rdf:type bm:ChannelPhases ;
+  rdf:type owl:Class ;
   rdfs:label "2. Evaluation" ;
+  rdfs:subClassOf bm:ChannelPhases ;
 .
 bm:Financial
   rdf:type owl:Class ;
@@ -476,8 +480,9 @@ bm:ProblemSolving
   rdfs:label "Problem Solving" ;
 .
 bm:Product
-  rdf:type bm:OfferingForms ;
+  rdf:type owl:Class ;
   rdfs:label "Product" ;
+  rdfs:subClassOf bm:OfferingForms ;
 .
 bm:ProductFeatureDependent
   rdf:type bm:FixedMenuPricing ;
@@ -489,8 +494,9 @@ bm:Production
   rdfs:label "Production" ;
 .
 bm:Purchase
-  rdf:type bm:ChannelPhases ;
+  rdf:type owl:Class ;
   rdfs:label "3. Purchase" ;
+  rdfs:subClassOf bm:ChannelPhases ;
 .
 bm:QualitativeValueOfferingTypes
   rdf:type owl:Class ;
@@ -512,10 +518,9 @@ bm:ReduceCosts
   bm:goalOfKeyPartnership_requires_CostStructureModels bm:CostDriven ;
   rdfs:label "reduce costs" ;
 .
-bm:ReductionOfRiskAndUncertaintyMAYBEdELETE
-  rdf:type owl:Class ;
+bm:ReductionOfRiskAndUncertainty
+  rdf:type bm:KeyPartnershipGoals ;
   rdfs:label "Reduction Of Risk And Uncertainty" ;
-  rdfs:subClassOf bm:KeyPartnershipGoals ;
 .
 bm:ResourceOwner
   rdf:type owl:Class ;
@@ -548,10 +553,9 @@ bm:SelfService
   rdfs:label "Self-Service" ;
 .
 bm:Service
-  rdf:type bm:OfferingForms ;
-  bm:offering_requires_KeyActivities bm:PlatformNetwork ;
-  bm:offering_requires_KeyActivities bm:Production ;
+  rdf:type owl:Class ;
   rdfs:label "Service" ;
+  rdfs:subClassOf bm:OfferingForms ;
 .
 bm:SharingInfrastructure
   rdf:type bm:OptimizationAndEconomyOfScale ;
