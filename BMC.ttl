@@ -67,7 +67,7 @@
 lo:BMC
   rdf:type lo:ModelingLanguage ;
   lo:hasModelingView lo:BMCModelingView ;
-  rdfs:label "SAP Scene" ;
+  rdfs:label "Business Model Canvas language" ;
 .
 lo:BMCModelingView
   rdf:type lo:ModelingView ;
@@ -77,29 +77,89 @@ lo:BMCModelingView
 .
 
 #--- to be added to PaletteOntology.ttl
-po:BMCElements
+
+#all the groupings in the
+# po:BMCElements #BMC palette sub-group e.g. Key Parnerns, Value Proposition etc... ---- PARTS
+#     rdf:type po:PaletteCategory ;
+#     po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+#     rdfs:label "Business Model Canvas Elements" ;
+# .
+
+
+po:KeyPartners #Key Partners
     rdf:type po:PaletteCategory ;
     po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
-    rdfs:label "Business Model Canvas Elements" ;
+    rdfs:label "Key Partners" ;
 .
 
-#template for a x BMCObject e.g. a post-it
-BMC:BMCObject
+po:KeyActivities #Key Activities
+    rdf:type po:PaletteCategory ;
+    po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    rdfs:label "Key Activities" ;
+.
+
+po:KeyResources #Key Resources
+    rdf:type po:PaletteCategory ;
+    po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    rdfs:label "Key Resources" ;
+.
+
+po:ValueProposition #Value Proposition
+    rdf:type po:PaletteCategory ;
+    po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    rdfs:label "Value Proposition" ;
+.
+
+po:CustomerRelationships #Customer Relationships
+    rdf:type po:PaletteCategory ;
+    po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    rdfs:label "Customer Relationships" ;
+.
+
+po:Channels #Channels
+    rdf:type po:PaletteCategory ;
+    po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    rdfs:label "Channels" ;
+.
+
+po:CustomerSegments #Customer Segments
+    rdf:type po:PaletteCategory ;
+    po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    rdfs:label "Customer Segments" ;
+.
+
+po:CostStructure #Cost Structure
+    rdf:type po:PaletteCategory ;
+    po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    rdfs:label "Cost Structure" ;
+.
+
+po:RevenueStreams #Revenue Streams
+    rdf:type po:PaletteCategory ;
+    po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    rdfs:label "Revenue Streams" ;
+.
+
+
+
+
+#template for a x BMCObject e.g. a post-it                                 --- INDIVIDUAL POST-IT
+BMC:BMCObjectTemplate
   rdf:type owl:Class ;
   rdfs:label "BMCObject" ;
   rdfs:subClassOf lo:ModelingElement ;
 .
-po:DefaultBackgroundBMC
+po:BMCObjectTemplate
   rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
   po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "BMCObject.PNG" ; #To be created
-  po:paletteConstructHasPaletteThumbnail "Thumbnail_BMCObject.PNG" ; #To be created
-  # po:paletteConstructHasParentPaletteConstruct po:Background ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasModelImage "BMCObjectTemplate.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_BMCObjectTemplate.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; as we do not need to have it under SapScene's po:Background
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:BMCElements ; #po:SAPScenesElements replaced with po:BMCElements
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:DefaultBackground ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:BMCObjectTemplate ; #here we connect the graphical representation (this construct) to the element in the domain ontology
   rdfs:label "DefaultBackgroundBMC" ;
 .
 
@@ -115,8 +175,8 @@ po:DefaultBackgroundBMC
   rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
   po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "BMC.PNG" ; #To be created
-  po:paletteConstructHasPaletteThumbnail "Thumbnail_BMC.PNG" ; #To be created
+  po:paletteConstructHasModelImage "DefaultBackgroundBMC.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_DefaultBackgroundBMC.PNG" ; #To be created
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:BMCElements ; #po:SAPScenesElements replaced with po:BMCElements
@@ -124,3 +184,5 @@ po:DefaultBackgroundBMC
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:DefaultBackground ;
   rdfs:label "DefaultBackgroundBMC" ;
 .
+
+
