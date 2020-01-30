@@ -492,6 +492,183 @@ po:SpeedOfService
   po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:SpeedOfService ; #here we connect the graphical representation (this construct) to the element in the domain ontology
   rdfs:label "Speed Of Service" ;
 .
+#--------------------------CUSTOMER RELATIONSHIP ---- HUMAN INTERACTION
+po:CoCreationWithPeople
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "CoCreationWithPeople.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_CoCreationWithPeople.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:CoCreationWithPeople ; #here we connect the graphical representation (this construct) to the element in the domain ontology
+  rdfs:label "Co Creation With People" ;
+.
+
+po:Communities
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Communities.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Communities.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:Communities ; #here we connect the graphical representation (this construct) to the element in the domain ontology
+  rdfs:label "Communities" ;
+.
+
+po:DedicatedPersonalAssistance
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "DedicatedPersonalAssistance.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_DedicatedPersonalAssistance.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:DedicatedPersonalAssistance ; #here we connect the graphical representation (this construct) to the element in the domain ontology
+  rdfs:label "Dedicated Personal Assistance" ;
+.
+
+po:PersonalAssistance
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "PersonalAssistance.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_PersonalAssistance.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:PersonalAssistance ; #here we connect the graphical representation (this construct) to the element in the domain ontology
+  rdfs:label "Personal Assistance" ;
+.
+
+#--------------------------CUSTOMER RELATIONSHIP ---- NON-HUMAN INTERACTION
+po:AutomatedService
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "AutomatedService.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_AutomatedService.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:AutomatedService ; #here we connect the graphical representation (this construct) to the element in the domain ontology
+  rdfs:label "Automated Service" ;
+.
+
+po:CoCreationWithBot
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "CoCreationWithBot.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_CoCreationWithBot.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:CoCreationWithBot ; #here we connect the graphical representation (this construct) to the element in the domain ontology
+  rdfs:label "CoCreation With Bot" ;
+.
+
+po:SelfService
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "SelfService.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_SelfService.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:SelfService ; #here we connect the graphical representation (this construct) to the element in the domain ontology
+  rdfs:label "Self Service" ;
+.
+
+
+#---------------------------CHANNELS DIRECT
+# we choose to use the types(adding the instances, grouping is Direct and Indirect), but the phases should be an attribute (at least)
+po:SalesForce
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "SalesForce.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_SalesForce.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Channels ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:SalesForce ; #here we connect the graphical representation (this construct) to the element in the domain ontology
+  rdfs:label "Sales Force" ;
+.
+
+po:WebSale
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "WebSale.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_WebSale.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Channels ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:WebSale ; #here we connect the graphical representation (this construct) to the element in the domain ontology
+  rdfs:label "Web Sale" ;
+.
+
+#------------- CHANNEL INDIRECT
+
+po:OwnStore
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "OwnStore.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_OwnStore.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Channels ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:OwnStore ; #here we connect the graphical representation (this construct) to the element in the domain ontology
+  rdfs:label "Own Store" ;
+.
+
+po:PartnerStore
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "PartnerStore.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_PartnerStore.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Channels ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:PartnerStore ; #here we connect the graphical representation (this construct) to the element in the domain ontology
+  rdfs:label "Partner Store" ;
+.
+
+po:Wholesaler
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Wholesaler.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Wholesaler.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Channels ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:Wholesaler ; #here we connect the graphical representation (this construct) to the element in the domain ontology
+  rdfs:label "Wholesaler" ;
+.
+
+
+
 #template for a x BMCObject e.g. a post-it                                 --- INDIVIDUAL POST-IT
 
 # BMC:BMCObjectTemplate
@@ -636,6 +813,70 @@ rdf:type owl:Class ;
 BMC:SpeedOfService
 rdf:type owl:Class ;
   rdfs:label "Speed Of Service" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+
+#--------------------------Customer Relationships
+BMC:CoCreationWithPeople
+rdf:type owl:Class ;
+  rdfs:label "Co Creation With People" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+BMC:Communities
+rdf:type owl:Class ;
+  rdfs:label "Communities" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+BMC:DedicatedPersonalAssistance
+rdf:type owl:Class ;
+  rdfs:label "Dedicated Personal Assistance" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+BMC:PersonalAssistance
+rdf:type owl:Class ;
+  rdfs:label "Personal Assistance" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+BMC:AutomatedService
+rdf:type owl:Class ;
+  rdfs:label "Automated Service" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+BMC:CoCreationWithBot
+rdf:type owl:Class ;
+  rdfs:label "Co Creation With Bot" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+BMC:SelfService
+rdf:type owl:Class ;
+  rdfs:label "Self Service" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+#-------------------------- CHANNELS DIRECT
+BMC:SalesForce
+rdf:type owl:Class ;
+  rdfs:label "Sales Force" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+BMC:WebSale
+rdf:type owl:Class ;
+  rdfs:label "Web Sale" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+#-------------------------- CHANNELS INDDIRECT
+BMC:OwnStore
+rdf:type owl:Class ;
+  rdfs:label "Own Store" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+BMC:PartnerStore
+rdf:type owl:Class ;
+  rdfs:label "Partner Store" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+BMC:Wholesaler
+rdf:type owl:Class ;
+  rdfs:label "Wholesaler" ;
   rdfs:subClassOf lo:ModelingElement ;
 .
 
