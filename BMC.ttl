@@ -1,0 +1,126 @@
+# baseURI: http://fhnw.ch/BMC
+
+@prefix : <http://fhnw.ch/SAPScenesOntology#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sapscenes: <http://fhnw.ch/SAPScenes#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#  I'm keeping the following as a reference
+
+# lo:SAPScene
+#   rdf:type lo:ModelingLanguage ;
+#   lo:hasModelingView lo:SAPSceneModelingView ;
+#   rdfs:label "SAP Scene" ;
+# .
+
+# lo:SAPSceneModelingView
+#   rdf:type lo:ModelingView ;
+#   lo:isMainModelingView "true"^^xsd:boolean ;
+#   lo:viewIsPartOfModelingLanguage lo:SAPScene ;
+#   rdfs:label "SAP Scenes Modeling View" ;
+# .
+
+# sapscenes:SceneObject
+#   rdf:type owl:Class ;
+#   rdfs:label "SceneObject" ;
+#   rdfs:subClassOf lo:ModelingElement ;
+# .
+
+# sapscenes:Background
+#   rdf:type owl:Class ;
+#   rdfs:label "Background" ;
+#   rdfs:subClassOf sapscenes:SceneObject ;
+# .
+
+#  sapscenes:Office
+#  rdf:type owl:Class ;
+#  rdfs:label "Office" ;
+#  rdfs:subClassOf sapscenes:Background ;
+#  .
+
+#  po:Office
+#  rdf:type po:PaletteElement ;
+#  po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
+#  po:paletteConstructHasHeight 70 ;
+#  po:paletteConstructHasModelImage "Office.PNG" ;
+#  po:paletteConstructHasPaletteThumbnail "Thumbnail_Office.PNG" ;
+#  po:paletteConstructHasParentPaletteConstruct po:Background ;
+#  po:paletteConstructHasWidth 100 ;
+#  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
+#  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+#  po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:Office ;
+#  rdfs:label "Office" ;
+#  .
+
+# po:SAPScenesElements
+#   rdf:type po:PaletteCategory ;
+#   po:paletteCategoryIsShownInModelingView lo:SAPSceneModelingView ;
+#   rdfs:label "SAP Scenes Elements" ;
+# .
+
+
+#--- to be added to ModellingLanguageOntology.ttl
+lo:BMC
+  rdf:type lo:ModelingLanguage ;
+  lo:hasModelingView lo:BMCModelingView ;
+  rdfs:label "SAP Scene" ;
+.
+lo:BMCModelingView
+  rdf:type lo:ModelingView ;
+  lo:isMainModelingView "true"^^xsd:boolean ;
+  lo:viewIsPartOfModelingLanguage lo:BMC ;
+  rdfs:label "BMC Modeling View" ;
+.
+
+#--- to be added to PaletteOntology.ttl
+po:BMCElements
+    rdf:type po:PaletteCategory ;
+    po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    rdfs:label "Business Model Canvas Elements" ;
+.
+
+#template for a x BMCObject e.g. a post-it
+BMC:BMCObject
+  rdf:type owl:Class ;
+  rdfs:label "BMCObject" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+po:DefaultBackgroundBMC
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "BMCObject.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_BMCObject.PNG" ; #To be created
+  # po:paletteConstructHasParentPaletteConstruct po:Background ; as we do not need to have it under SapScene's po:Background
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:BMCElements ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:DefaultBackground ;
+  rdfs:label "DefaultBackgroundBMC" ;
+.
+
+#Default background is the BMC model, it is not needed to have a subclass of the SapScene Background
+
+BMC:DefaultBackground
+  rdf:type owl:Class ;
+  rdfs:label "DefaultBackground" ;
+  rdfs:subClassOf lo:ModelingElement ;
+  .
+
+po:DefaultBackgroundBMC
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; #BMCModelling view instead of SapSceneModelling view
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "BMC.PNG" ; #To be created
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_BMC.PNG" ; #To be created
+  po:paletteConstructHasParentPaletteConstruct po:Background ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:BMCElements ; #po:SAPScenesElements replaced with po:BMCElements
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:DefaultBackground ;
+  rdfs:label "DefaultBackgroundBMC" ;
+.
