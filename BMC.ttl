@@ -140,6 +140,11 @@ po:RevenueStreams #Revenue Streams
     rdfs:label "Revenue Streams" ;
 .
 
+po:BMCDefaultBackgrounds #Revenue Streams
+    rdf:type po:PaletteCategory ;
+    po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    rdfs:label "BMC Default Backgrounds" ;
+.
 #  Individual post it belonging to each groups of the PO (Business model parts' elements)
 # po:BMCObjectTemplate
 #   rdf:type po:PaletteElement ;
@@ -210,20 +215,6 @@ po:AcademicInstitute
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:AcademicInstitute ; 
   rdfs:label "Academic Institute" ;
-.
-
-po:BMCObjectTemplate
-  rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
-  po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "BMCObjectTemplate.PNG" ; 
-  po:paletteConstructHasPaletteThumbnail "Thumbnail_BMCObjectTemplate.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
-  po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:BMCElements ; 
-  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:BMCObjectTemplate ; 
-  rdfs:label "DefaultBackgroundBMC" ;
 .
 
 #--------- KEY ACTIVITIES
@@ -1128,7 +1119,7 @@ rdf:type owl:Class ;
 
 #Default background is the BMC model, it is not needed to have a subclass of the SapScene Background
 
-BMC:DefaultBackground
+BMC:DefaultBackgroundBMC
   rdf:type owl:Class ;
   rdfs:label "DefaultBackground" ;
   rdfs:subClassOf lo:ModelingElement ;
@@ -1142,9 +1133,9 @@ po:DefaultBackgroundBMC
   po:paletteConstructHasPaletteThumbnail "Thumbnail_DefaultBackgroundBMC.PNG" ; 
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:BMCElements ; 
+  po:paletteConstructIsGroupedInPaletteCategory po:BMCDefaultBackgrounds ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:DefaultBackground ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:DefaultBackgroundBMC ;
   rdfs:label "DefaultBackgroundBMC" ;
 .
 
