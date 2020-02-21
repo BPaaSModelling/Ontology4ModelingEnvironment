@@ -8,6 +8,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sapscenes: <http://fhnw.ch/SAPScenes#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix po: <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
+@prefix BMC: <http://fhnw.ch/BMC#> .
 
 #  I'm keeping the following as a reference
 
@@ -89,76 +91,72 @@ lo:BMCModelingView
 po:KeyPartners #Key Partners
     rdf:type po:PaletteCategory ;
     po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    po:paletteCategoryOrderNumber 2 ;
     rdfs:label "Key Partners" ;
 .
 
 po:KeyActivities #Key Activities
     rdf:type po:PaletteCategory ;
     po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    po:paletteCategoryOrderNumber 3 ;
     rdfs:label "Key Activities" ;
 .
 
 po:KeyResources #Key Resources
     rdf:type po:PaletteCategory ;
     po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    po:paletteCategoryOrderNumber 4 ;
     rdfs:label "Key Resources" ;
 .
 
 po:ValueProposition #Value Proposition
     rdf:type po:PaletteCategory ;
     po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    po:paletteCategoryOrderNumber 5 ;
     rdfs:label "Value Proposition" ;
 .
 
 po:CustomerRelationships #Customer Relationships
     rdf:type po:PaletteCategory ;
     po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    po:paletteCategoryOrderNumber 6 ;
     rdfs:label "Customer Relationships" ;
 .
 
 po:Channels #Channels
     rdf:type po:PaletteCategory ;
     po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    po:paletteCategoryOrderNumber 7 ;
     rdfs:label "Channels" ;
 .
 
 po:CustomerSegments #Customer Segments
     rdf:type po:PaletteCategory ;
     po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    po:paletteCategoryOrderNumber 8 ;
     rdfs:label "Customer Segments" ;
 .
 
 po:CostStructure #Cost Structure
     rdf:type po:PaletteCategory ;
     po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    po:paletteCategoryOrderNumber 9 ;
     rdfs:label "Cost Structure" ;
 .
 
 po:RevenueStreams #Revenue Streams
     rdf:type po:PaletteCategory ;
     po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
+    po:paletteCategoryOrderNumber 10 ;
     rdfs:label "Revenue Streams" ;
 .
 
-po:BMCDefaultBackgrounds #Revenue Streams
+po:SetUpInformation #Revenue Streams
     rdf:type po:PaletteCategory ;
     po:paletteCategoryIsShownInModelingView lo:BMCModelingView ;
-    rdfs:label "BMC Default Backgrounds" ;
+    po:paletteCategoryOrderNumber 1 ;
+    rdfs:label "Set-up Information" ;
 .
-#  Individual post it belonging to each groups of the PO (Business model parts' elements)
-# po:BMCObjectTemplate
-#   rdf:type po:PaletteElement ;
-#   po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
-#   po:paletteConstructHasHeight 70 ;
-#   po:paletteConstructHasModelImage "BMCObjectTemplate.PNG" ; 
-#   po:paletteConstructHasPaletteThumbnail "Thumbnail_BMCObjectTemplate.PNG" ; 
-#   # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
-#   po:paletteConstructHasWidth 100 ;
-#   po:paletteConstructIsGroupedInPaletteCategory po:BMCElements ; 
-#   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-#   po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:BMCObjectTemplate ; 
-#   rdfs:label "DefaultBackgroundBMC" ;
-# .
 
 # ---------- KEY PARTNERS
 po:Individual
@@ -730,14 +728,14 @@ po:VariableCost
   rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
   po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "Wholesaler.PNG" ; 
-  po:paletteConstructHasPaletteThumbnail "Thumbnail_Wholesaler.PNG" ; 
+  po:paletteConstructHasModelImage "VariableCost.PNG" ; 
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_VariableCost.PNG" ; 
   # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:CostStructure ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:Wholesaler ; 
-  rdfs:label "Wholesaler" ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:VariableCost ; 
+  rdfs:label "Variable Cost" ;
 .
 #------------ REVENUE STREAMS
 po:Advertising
@@ -830,6 +828,18 @@ po:UsageFee
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:Wholesaler ; 
   rdfs:label "Usage Fee" ;
+.
+po:DefaultBackgroundBMC
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "DefaultBackgroundBMC.PNG" ; 
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_DefaultBackgroundBMC.PNG" ; 
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:SetUpInformation ; 
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:Background ;
+  rdfs:label "Background" ;
 .
 
 #----------------------------------- to be kept in BMC.TTL
@@ -1119,24 +1129,12 @@ rdf:type owl:Class ;
 
 #Default background is the BMC model, it is not needed to have a subclass of the SapScene Background
 
-BMC:DefaultBackgroundBMC
+BMC:Background
   rdf:type owl:Class ;
-  rdfs:label "DefaultBackground" ;
+  rdfs:label "Background" ;
   rdfs:subClassOf lo:ModelingElement ;
   .
 
-po:DefaultBackgroundBMC
-  rdf:type po:PaletteElement ;
-  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
-  po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "DefaultBackgroundBMC.PNG" ; 
-  po:paletteConstructHasPaletteThumbnail "Thumbnail_DefaultBackgroundBMC.PNG" ; 
-  po:paletteConstructHasParentPaletteConstruct po:Background ;
-  po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:BMCDefaultBackgrounds ; 
-  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:DefaultBackgroundBMC ;
-  rdfs:label "DefaultBackgroundBMC" ;
-.
+
 
 
