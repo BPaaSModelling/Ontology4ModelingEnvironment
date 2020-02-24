@@ -303,13 +303,26 @@ po:Physical
 
 
 #-----------------VALUE PROPOSITION - QUALITATIVE
+po:QualitativeVP
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "QualitativeVP.PNG" ; 
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_QualitativeVP.PNG" ; 
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasWidth 120 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:QualitativeVP ; 
+  rdfs:label "Qualitative Value Propositions" ;
+.
 po:Accessibility
   rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Accessibility.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Accessibility.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:QualitativeVP ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -322,7 +335,7 @@ po:Convenience
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Convenience.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Convenience.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:QualitativeVP ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -335,7 +348,7 @@ po:CustomerCoCreation
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "CustomerCoCreation.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_CustomerCoCreation.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:QualitativeVP ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -349,7 +362,7 @@ po:Design
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Design.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Design.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:QualitativeVP ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -363,7 +376,7 @@ po:MassCustomization
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "MassCustomization.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_MassCustomization.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:QualitativeVP ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -377,7 +390,7 @@ po:Newness
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Newness.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Newness.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:QualitativeVP ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -391,7 +404,7 @@ po:Status
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Status.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Status.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:QualitativeVP ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -399,13 +412,27 @@ po:Status
   rdfs:label "Status" ;
 .
 #-----------------VALUE PROPOSITION - QUANTITATIVE
+po:QuantitativeVP
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "QuantitativeVP.PNG" ; 
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_QuantitativeVP.PNG" ; 
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasWidth 120 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:QuantitativeVP ; 
+  rdfs:label "Quantitative Value Propositions" ;
+.
+
 po:CostReduction
   rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "CostReduction.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_CostReduction.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:QuantitativeVP ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -419,7 +446,7 @@ po:GettingTheJobDone
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "GettingTheJobDone.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_GettingTheJobDone.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:QuantitativeVP ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -433,7 +460,7 @@ po:Performance
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Performance.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Performance.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:QuantitativeVP ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -446,7 +473,7 @@ po:Price
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Price.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Price.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:QuantitativeVP ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -460,7 +487,7 @@ po:RiskReduction
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "RiskReduction.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_RiskReduction.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:QuantitativeVP ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -474,7 +501,7 @@ po:SpeedOfService
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "SpeedOfService.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_SpeedOfService.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:QuantitativeVP ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ValueProposition ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -482,13 +509,27 @@ po:SpeedOfService
   rdfs:label "Speed Of Service" ;
 .
 #--------------------------CUSTOMER RELATIONSHIP ---- HUMAN INTERACTION
+po:HumanInteraction
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "HumanInteraction.PNG" ; 
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_HumanInteraction.PNG" ; 
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasWidth 120 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; 
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:HumanInteraction ; 
+  rdfs:label "Human Interactions" ;
+.
+
 po:CoCreationWithPeople
   rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "CoCreationWithPeople.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_CoCreationWithPeople.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:HumanInteraction ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -502,7 +543,7 @@ po:Communities
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Communities.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Communities.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:HumanInteraction ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -516,7 +557,7 @@ po:DedicatedPersonalAssistance
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "DedicatedPersonalAssistance.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_DedicatedPersonalAssistance.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:HumanInteraction ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -530,7 +571,7 @@ po:PersonalAssistance
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "PersonalAssistance.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_PersonalAssistance.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:HumanInteraction ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -539,13 +580,27 @@ po:PersonalAssistance
 .
 
 #--------------------------CUSTOMER RELATIONSHIP ---- NON-HUMAN INTERACTION
+po:NonHumanInteraction
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "NonHumanInteraction.PNG" ; 
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_NonHumanInteraction.PNG" ; 
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasWidth 120 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; 
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:NonHumanInteraction ; 
+  rdfs:label "Non-Human Interactions" ;
+.
+
 po:AutomatedService
   rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "AutomatedService.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_AutomatedService.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:NonHumanInteraction ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -559,7 +614,7 @@ po:CoCreationWithBot
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "CoCreationWithBot.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_CoCreationWithBot.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:NonHumanInteraction ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -573,7 +628,7 @@ po:SelfService
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "SelfService.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_SelfService.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:NonHumanInteraction ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:CustomerRelationships ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -584,13 +639,27 @@ po:SelfService
 
 #---------------------------CHANNELS DIRECT
 # we choose to use the types(adding the instances, grouping is Direct and Indirect), but the phases should be an attribute (at least)
+po:DirectChannel
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "DirectChannel.PNG" ; 
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_DirectChannel.PNG" ; 
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasWidth 120 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Channels ; 
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:DirectChannel ; 
+  rdfs:label "Direct Channels" ;
+.
+
 po:SalesForce
   rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "SalesForce.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_SalesForce.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:DirectChannel ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Channels ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -604,7 +673,7 @@ po:WebSale
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "WebSale.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_WebSale.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:DirectChannel ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Channels ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -613,6 +682,19 @@ po:WebSale
 .
 
 #------------- CHANNEL INDIRECT
+po:IndirectChannel
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "IndirectChannel.PNG" ; 
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_IndirectChannel.PNG" ; 
+  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasWidth 120 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:Channels ; 
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:IndirectChannel ; 
+  rdfs:label "Indirect Channels" ;
+.
 
 po:OwnStore
   rdf:type po:PaletteElement ;
@@ -620,7 +702,7 @@ po:OwnStore
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "OwnStore.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_OwnStore.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:IndirectChannel ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Channels ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -634,7 +716,7 @@ po:PartnerStore
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "PartnerStore.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_PartnerStore.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:IndirectChannel ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Channels ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -648,7 +730,7 @@ po:Wholesaler
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Wholesaler.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Wholesaler.PNG" ; 
-  # po:paletteConstructHasParentPaletteConstruct po:parentBMCObject ; 
+  po:paletteConstructHasParentPaletteConstruct po:IndirectChannel ; 
   po:paletteConstructHasWidth 120 ;
   po:paletteConstructIsGroupedInPaletteCategory po:Channels ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -842,13 +924,26 @@ po:DefaultBackgroundBMC
   po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:Background ;
   rdfs:label "" ;
 .
-#--------Set Up Information - Case Description
+#--------Set Up Information - Canvas Description
+po:CanvasDescription
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
+  po:paletteConstructHasHeight 55 ;
+  po:paletteConstructHasModelImage "CanvasDescription.PNG" ; 
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_CanvasDescription.PNG" ; 
+  po:paletteConstructHasWidth 170 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:SetUpInformation ; 
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct BMC:CanvasDescription ;
+  rdfs:label "Canvas description" ;
+.
 po:DesignedFor
   rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:BMCModelingView ; 
   po:paletteConstructHasHeight 55 ;
   po:paletteConstructHasModelImage "DesignedFor.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_DesignedFor.PNG" ; 
+  po:paletteConstructHasParentPaletteConstruct po:CanvasDescription ; 
   po:paletteConstructHasWidth 170 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SetUpInformation ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -861,6 +956,7 @@ po:DesignedBy
   po:paletteConstructHasHeight 55 ;
   po:paletteConstructHasModelImage "DesignedBy.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_DesignedBy.PNG" ; 
+  po:paletteConstructHasParentPaletteConstruct po:CanvasDescription ; 
   po:paletteConstructHasWidth 170 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SetUpInformation ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -873,6 +969,7 @@ po:DateOfCreation
   po:paletteConstructHasHeight 55 ;
   po:paletteConstructHasModelImage "DateOfCreation.PNG" ; 
   po:paletteConstructHasPaletteThumbnail "Thumbnail_DateOfCreation.PNG" ; 
+  po:paletteConstructHasParentPaletteConstruct po:CanvasDescription ; 
   po:paletteConstructHasWidth 170 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SetUpInformation ; 
   po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
@@ -948,146 +1045,178 @@ rdf:type owl:Class ;
 .
 
 #------------ VALUE PROPOSITION - QUALITATIVE
+BMC:QualitativeVP
+rdf:type owl:Class ;
+  rdfs:label "Qualitative Value Propositions" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+
 BMC:Accessibility
 rdf:type owl:Class ;
   rdfs:label "Accessibility" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:QualitativeVP ;
 .
 
 BMC:Convenience
 rdf:type owl:Class ;
   rdfs:label "Convenience" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:QualitativeVP ;
 .
 
 BMC:CustomerCoCreation
 rdf:type owl:Class ;
   rdfs:label "CustomerCoCreation" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:QualitativeVP ;
 .
 
 BMC:Design
 rdf:type owl:Class ;
   rdfs:label "Design" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:QualitativeVP ;
 .
 
 BMC:MassCustomization
 rdf:type owl:Class ;
   rdfs:label "Mass Customization" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:QualitativeVP ;
 .
 
 BMC:Newness
 rdf:type owl:Class ;
   rdfs:label "Newness" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:QualitativeVP ;
 .
 
 BMC:Status
 rdf:type owl:Class ;
   rdfs:label "Status" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:QualitativeVP ;
 .
 
 #------------ VALUE PROPOSITION - QUANTITATIVE
+BMC:QuantitativeVP
+rdf:type owl:Class ;
+  rdfs:label "Quantitative Value Propositions" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
 BMC:CostReduction
 rdf:type owl:Class ;
   rdfs:label "Cost Reduction" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:QuantitativeVP ;
 .
 BMC:GettingTheJobDone
 rdf:type owl:Class ;
   rdfs:label "Getting The Job Done" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:QuantitativeVP ;
 .
 
 BMC:Performance
 rdf:type owl:Class ;
   rdfs:label "Performance" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:QuantitativeVP ;
 .
 
 BMC:Price
 rdf:type owl:Class ;
   rdfs:label "Price" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:QuantitativeVP ;
 .
 
 BMC:RiskReduction
 rdf:type owl:Class ;
   rdfs:label "Risk Reduction" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:QuantitativeVP ;
 .
 
 BMC:SpeedOfService
 rdf:type owl:Class ;
   rdfs:label "Speed Of Service" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:QuantitativeVP ;
 .
 
-#--------------------------Customer Relationships
+#--------------------------Customer Relationships - Human Interaction 
+BMC:HumanInteraction
+rdf:type owl:Class ;
+  rdfs:label "Human Interactions" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
 BMC:CoCreationWithPeople
 rdf:type owl:Class ;
   rdfs:label "Co Creation With People" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:HumanInteraction ;
 .
 BMC:Communities
 rdf:type owl:Class ;
   rdfs:label "Communities" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:HumanInteraction ;
 .
 BMC:DedicatedPersonalAssistance
 rdf:type owl:Class ;
   rdfs:label "Dedicated Personal Assistance" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:HumanInteraction ;
 .
 BMC:PersonalAssistance
 rdf:type owl:Class ;
   rdfs:label "Personal Assistance" ;
+  rdfs:subClassOf lo:HumanInteraction ;
+.
+#--------------------------CUSTOMER RELATIONSHIP ---- NON-HUMAN INTERACTION
+BMC:NonHumanInteraction
+rdf:type owl:Class ;
+  rdfs:label "Non-Human Interactions" ;
   rdfs:subClassOf lo:ModelingElement ;
 .
 BMC:AutomatedService
 rdf:type owl:Class ;
   rdfs:label "Automated Service" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:NonHumanInteraction ;
 .
 BMC:CoCreationWithBot
 rdf:type owl:Class ;
   rdfs:label "Co Creation With Bot" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:NonHumanInteraction ;
 .
 BMC:SelfService
 rdf:type owl:Class ;
   rdfs:label "Self Service" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:NonHumanInteraction ;
 .
 #-------------------------- CHANNELS DIRECT
+BMC:DirectChannel
+rdf:type owl:Class ;
+  rdfs:label "Direct Channels" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
 BMC:SalesForce
 rdf:type owl:Class ;
   rdfs:label "Sales Force" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:DirectChannel ;
 .
 BMC:WebSale
 rdf:type owl:Class ;
   rdfs:label "Web Sale" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:DirectChannel ;
 .
 #-------------------------- CHANNELS INDDIRECT
+BMC:IndirectChannel
+rdf:type owl:Class ;
+  rdfs:label "Indirect Channels" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
 BMC:OwnStore
 rdf:type owl:Class ;
   rdfs:label "Own Store" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:IndirectChannel ;
 .
 BMC:PartnerStore
 rdf:type owl:Class ;
   rdfs:label "Partner Store" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:IndirectChannel ;
 .
 BMC:Wholesaler
 rdf:type owl:Class ;
   rdfs:label "Wholesaler" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:IndirectChannel ;
 .
 
 #------------ CUSTOMER SEGMENTS
@@ -1173,19 +1302,24 @@ BMC:Background
   rdfs:subClassOf lo:ModelingElement ;
   .
 #--------Set Up Information - Case Description
+BMC:CanvasDescription
+  rdf:type owl:Class ;
+  rdfs:label "Canvas description" ;
+  rdfs:subClassOf lo:ModelingElement ;
+  .
 BMC:DesignedFor
   rdf:type owl:Class ;
   rdfs:label "Designed for" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:CanvasDescription ;
   .
 BMC:DesignedBy
   rdf:type owl:Class ;
   rdfs:label "Designed by" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:CanvasDescription ;
   .
 BMC:DateOfCreation
   rdf:type owl:Class ;
   rdfs:label "Date of creation" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf lo:CanvasDescription ;
   .
 
