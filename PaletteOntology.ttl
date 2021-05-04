@@ -112,6 +112,18 @@ po:Accessory
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:Accessory ;
   rdfs:label "Accessory" ;
 .
+po:Accessory_1
+  rdf:type po:PaletteElement ;
+  po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Accessory.PNG" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Accessory.PNG" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:Accessory ;
+  rdfs:label "Accessory" ;
+.
 po:Activity
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
