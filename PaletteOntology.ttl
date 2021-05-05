@@ -3577,6 +3577,22 @@ po:Team
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:Team ;
   rdfs:label "Team" ;
 .
+po:TechnologyInterface
+  rdf:type po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "TechnologyInterface.png" ;
+  po:paletteConstructHasPaletteThumbnail "TechnologyInterface_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_TechnologyLayer ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:TechnologyInterface ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage "false"^^xsd:boolean ;
+  rdfs:label "Technology Interface" ;
+.
 po:TechnologyService
   rdf:type po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;

@@ -358,6 +358,11 @@ archi:SystemSoftware
   rdfs:subClassOf archi:BehaviourElement ;
   rdfs:subClassOf archi:Node ;
 .
+archi:TechnologyInterface
+  rdf:type owl:Class ;
+  rdfs:label "Technology interface" ;
+  rdfs:subClassOf archi:Interface ;
+.
 archi:TechnologyService
   rdf:type owl:Class ;
   rdfs:comment """Archimate V1.0 Technology Layer Concept.
