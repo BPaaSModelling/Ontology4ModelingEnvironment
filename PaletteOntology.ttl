@@ -239,6 +239,53 @@ po:ApplicationDataObject
   po:paletteElementUsesImage false ;
   rdfs:label "Application DataObject" ;
 .
+po:ApplicationFunction
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "ApplicationFunction.png" ;
+  po:paletteConstructHasPaletteThumbnail "ApplicationFunction_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_ApplicationLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:ApplicationFunction ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Application Function" ;
+.
+po:ApplicationInterface
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "ApplicationInterface.png" ;
+  po:paletteConstructHasPaletteThumbnail "ApplicationInterface_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_ApplicationLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:ApplicationInterface ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Application Interface" ;
+.
+po:ApplicationProcess
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "ApplicationProcess.png" ;
+  po:paletteConstructHasPaletteThumbnail "ApplicationProcess_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_ApplicationLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Application Process" ;
+.
 po:ApplicationService
   a po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -449,6 +496,10 @@ po:Bar
   po:paletteConstructIsHiddenFromPalette false ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:Bar ;
   rdfs:label "Bar" ;
+.
+po:BehaviourElement_1
+  a archi:BehaviourElement ;
+  rdfs:label "Behaviour element 1" ;
 .
 po:BelongsTo_DKM
   a po:PaletteConnector ;
