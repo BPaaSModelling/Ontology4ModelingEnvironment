@@ -207,6 +207,22 @@ po:Airport
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:Airport ;
   rdfs:label "Airport" ;
 .
+po:ApplicationCollaboration
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "ApplicationCollaboration.png" ;
+  po:paletteConstructHasPaletteThumbnail "ApplicationCollaboration_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_ApplicationLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:ApplicationCollaboration ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Application Collaboration" ;
+.
 po:ApplicationComponent
   a po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -239,6 +255,22 @@ po:ApplicationDataObject
   po:paletteElementUsesImage false ;
   rdfs:label "Application DataObject" ;
 .
+po:ApplicationEvent
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "ApplicationEvent.png" ;
+  po:paletteConstructHasPaletteThumbnail "ApplicationEvent_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_ApplicationLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:ApplicationEvent ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Application Event" ;
+.
 po:ApplicationFunction
   a po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -254,6 +286,22 @@ po:ApplicationFunction
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage false ;
   rdfs:label "Application Function" ;
+.
+po:ApplicationInteraction
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "ApplicationInteraction.png" ;
+  po:paletteConstructHasPaletteThumbnail "ApplicationInteraction_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_ApplicationLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:ApplicationInteraction ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Application Interaction" ;
 .
 po:ApplicationInterface
   a po:PaletteElement ;
@@ -4456,6 +4504,22 @@ bpmn:DataType
 bpmn:UserTask
   rdfs:range xsd:string ;
   rdfs:range true ;
+.
+archi:ApplicationCollaboration
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Application Layer Concept.
+\"A unit of behavior jointly performed by two or more collaborating components.\" (OpenGroup 2009)""" ;
+  rdfs:comment """Archimate V2.1
+\"An application interaction is defined as the behavoir element that describes the behavoir an application collaboration\" (OpenGroup 2013, p.40).""" ;
+  rdfs:subClassOf archi:BehaviourElement ;
+.
+archi:ApplicationEvent
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Application Layer Concept.
+\"A coherent group of internal behavior of a component.\" (OpenGroup 2009)""" ;
+  rdfs:comment """Archimate V2.1
+\"Application function is defined as behavoir element that groups automated behavoir that can be perfomed by an application component\" (OpenGroup 2013, p.39).""" ;
+  rdfs:subClassOf archi:BehaviourElement ;
 .
 <http://ikm-group.ch/ontology-based-modelling-environment>
   owl:imports <http://ikm-group.ch/archiMEO/BPMN> ;
