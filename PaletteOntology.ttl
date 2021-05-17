@@ -692,7 +692,7 @@ po:BusinessActor
   a po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "BusinessActor.png" ;
-  po:paletteConstructHasPaletteThumbnail "BusinessActor.png" ;
+  po:paletteConstructHasPaletteThumbnail "BusinessActor_Thumbnail.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_BusinessLayer ;
   po:paletteConstructIsHiddenFromPalette false ;
@@ -756,7 +756,7 @@ po:BusinessFunction
   a po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "BusinessFunction.png" ;
-  po:paletteConstructHasPaletteThumbnail "BusinessFunction.png" ;
+  po:paletteConstructHasPaletteThumbnail "BusinessFunction_Thumbnail.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_BusinessLayer ;
   po:paletteConstructIsHiddenFromPalette false ;
@@ -881,7 +881,7 @@ po:BusinessRole
   a po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "BusinessRole.png" ;
-  po:paletteConstructHasPaletteThumbnail "BusinessRole.png" ;
+  po:paletteConstructHasPaletteThumbnail "BusinessRole_Thumbnail.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_BusinessLayer ;
   po:paletteConstructIsHiddenFromPalette false ;
@@ -933,7 +933,7 @@ po:BusinessService
   a po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "BusinessService.png" ;
-  po:paletteConstructHasPaletteThumbnail "BusinessService.png" ;
+  po:paletteConstructHasPaletteThumbnail "BusinessService_Thumbnail.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_BusinessLayer ;
   po:paletteConstructIsHiddenFromPalette false ;
