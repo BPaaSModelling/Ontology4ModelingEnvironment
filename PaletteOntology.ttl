@@ -720,6 +720,22 @@ po:BusinessCollaboration
   po:paletteElementUsesImage false ;
   rdfs:label "Business Collaboration" ;
 .
+po:BusinessContract
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "BusinessContract.png" ;
+  po:paletteConstructHasPaletteThumbnail "BusinessContract_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_BusinessLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:BusinessContract ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Business Contract" ;
+.
 po:BusinessEvent
   a po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -828,6 +844,38 @@ po:BusinessProcess
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage false ;
   rdfs:label "Business Process" ;
+.
+po:BusinessProduct
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "BusinessProduct.png" ;
+  po:paletteConstructHasPaletteThumbnail "BusinessProduct_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_BusinessLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Product ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Business Product" ;
+.
+po:BusinessRepresentation
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "BusinessRepresentation.png" ;
+  po:paletteConstructHasPaletteThumbnail "BusinessRepresentation_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_BusinessLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:BusinessRepresentation ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Business Representation" ;
 .
 po:BusinessRole
   a po:PaletteElement ;
@@ -4847,6 +4895,18 @@ archi:ApplicationFunction
 .
 archi:ApplicationInteraction
   rdfs:subClassOf archi:ApplicationBehaviourElement ;
+.
+archi:BusinessContract
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Business Layer Concept.
+\"A unit of information that has relevance from a business perspective.\" (OpenGroup 2009)""" ;
+  rdfs:subClassOf archi:PassiveStructureElement ;
+.
+archi:BusinessRepresentation
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Business Layer Concept.
+\"A unit of information that has relevance from a business perspective.\" (OpenGroup 2009)""" ;
+  rdfs:subClassOf archi:PassiveStructureElement ;
 .
 archi:DistributionNetwork
   a owl:Class ;
