@@ -365,13 +365,25 @@ po:ArchiMate_BusinessLayer
 po:ArchiMate_Connectors
   a po:PaletteCategory ;
   po:paletteCategoryIsShownInModelingView lo:ArchiMateView ;
-  po:paletteCategoryOrderNumber 4 ;
+  po:paletteCategoryOrderNumber 6 ;
   rdfs:label "ArchiMate Connectors" ;
 .
 po:ArchiMate_General
   a po:PaletteCategory ;
   po:paletteCategoryIsUsedInModelingLanguage lo:ArchiMate ;
   rdfs:label "ArchiMate General" ;
+.
+po:ArchiMate_MigrationElement
+  a po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:ArchiMateView ;
+  po:paletteCategoryOrderNumber 5 ;
+  rdfs:label "Migration Element" ;
+.
+po:ArchiMate_PhysicalElement
+  a po:PaletteCategory ;
+  po:paletteCategoryIsShownInModelingView lo:ArchiMateView ;
+  po:paletteCategoryOrderNumber 4 ;
+  rdfs:label "Physical Element" ;
 .
 po:ArchiMate_TechnologyLayer
   a po:PaletteCategory ;
@@ -692,6 +704,38 @@ po:BusinessActor
   po:paletteElementUsesImage false ;
   rdfs:label "Business Actor" ;
 .
+po:BusinessCollaboration
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "BusinessCollaboration.png" ;
+  po:paletteConstructHasPaletteThumbnail "BusinessCollaboration_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_BusinessLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:BusinessCollaboration ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Business Collaboration" ;
+.
+po:BusinessEvent
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "BusinessEvent.png" ;
+  po:paletteConstructHasPaletteThumbnail "BusinessEvent_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_BusinessLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:BusinessEvent ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Business Event" ;
+.
 po:BusinessFunction
   a po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -707,6 +751,38 @@ po:BusinessFunction
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage false ;
   rdfs:label "Business Function" ;
+.
+po:BusinessInteraction
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "BusinessInteraction.png" ;
+  po:paletteConstructHasPaletteThumbnail "BusinessInteraction_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_BusinessLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:BusinessInteraction ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Business Interaction" ;
+.
+po:BusinessInterface
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "BusinessInterface.png" ;
+  po:paletteConstructHasPaletteThumbnail "BusinessInterface_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_BusinessLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:BusinessInterface ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Business Interface" ;
 .
 po:BusinessMan
   a po:PaletteElement ;
@@ -1261,6 +1337,22 @@ po:Coil
   a po:ArrowStroke ;
   rdfs:label "Coil" ;
 .
+po:CommunicationNetwork
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "CommunicationNetwork.png" ;
+  po:paletteConstructHasPaletteThumbnail "CommunicationNetwork_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_TechnologyLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Network ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Communication Network" ;
+.
 po:ConcaveTailArrow
   a po:ArrowHead ;
   rdfs:label "ConcaveTailArrow" ;
@@ -1550,6 +1642,22 @@ po:Dishwasher
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:Dishwasher ;
   rdfs:label "Dishwasher" ;
 .
+po:DistributionNetwork
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "DistributionNetwork.png" ;
+  po:paletteConstructHasPaletteThumbnail "DistributionNetwork_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_PhysicalElement ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:DistributionNetwork ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Distribution Network" ;
+.
 po:Doctor
   a po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
@@ -1771,6 +1879,22 @@ po:EquilibriumArrow
   a po:ArrowHead ;
   rdfs:label "EquilibriumArrow" ;
 .
+po:Equipment
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Equipment.png" ;
+  po:paletteConstructHasPaletteThumbnail "Equipment_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_PhysicalElement ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Equipment ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Equipment" ;
+.
 po:EventBasedGateway
   a po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -1831,6 +1955,22 @@ po:ExtractorHood
   po:paletteConstructIsHiddenFromPalette false ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:ExtractorHood ;
   rdfs:label "Extractor Hood" ;
+.
+po:Facility
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Facility.png" ;
+  po:paletteConstructHasPaletteThumbnail "Facility_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_PhysicalElement ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Facility ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Facility" ;
 .
 po:Factory
   a po:PaletteElement ;
@@ -1946,6 +2086,22 @@ po:Gain
   questionnaire:hasOrderNumberForVisualization 1 ;
   rdfs:comment "new" ;
   rdfs:label "Gain" ;
+.
+po:Gap
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Gap.png" ;
+  po:paletteConstructHasPaletteThumbnail "Gap_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_MigrationElement ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Gap ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Gap" ;
 .
 po:Gateway
   a po:PaletteElement ;
@@ -2547,6 +2703,22 @@ po:ManualTask_4DSML4PTM
   po:paletteElementUsesImage false ;
   rdfs:label "Manual Task" ;
 .
+po:Material
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Material.png" ;
+  po:paletteConstructHasPaletteThumbnail "Material_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_PhysicalElement ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Material ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Material" ;
+.
 po:MeetingRoom
   a po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
@@ -2676,7 +2848,7 @@ po:Node
   a po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Node.png" ;
-  po:paletteConstructHasPaletteThumbnail "Node.png" ;
+  po:paletteConstructHasPaletteThumbnail "Node_Thumbnail.png" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_TechnologyLayer ;
   po:paletteConstructIsHiddenFromPalette false ;
@@ -2961,6 +3133,22 @@ po:Performer
   po:paletteConstructIsHiddenFromPalette false ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct <http://fhnw.ch/OrganizationalModel/orgm#Performer> ;
   rdfs:label "Performer" ;
+.
+po:Plateau
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "Plateau.png" ;
+  po:paletteConstructHasPaletteThumbnail "Plateau_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_MigrationElement ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Plateau ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Plateau" ;
 .
 po:PlusCircle
   a po:ArrowHead ;
@@ -3692,6 +3880,102 @@ po:Team
   po:paletteConstructIsRelatedToModelingLanguageConstruct sapscenes:Team ;
   rdfs:label "Team" ;
 .
+po:TechnologyArtifact
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "TechnologyArtifact.png" ;
+  po:paletteConstructHasPaletteThumbnail "TechnologyArtifact_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_TechnologyLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Artifact ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Technology Artifact" ;
+.
+po:TechnologyCollaboration
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "TechnologyCollaboration.png" ;
+  po:paletteConstructHasPaletteThumbnail "TechnologyCollaboration_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_TechnologyLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:TechnologyCollaboration ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Technology Collaboration" ;
+.
+po:TechnologyDevice
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "TechnologyDevice.png" ;
+  po:paletteConstructHasPaletteThumbnail "TechnologyDevice_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_TechnologyLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Device ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Technology Device" ;
+.
+po:TechnologyEvent
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "TechnologyEvent.png" ;
+  po:paletteConstructHasPaletteThumbnail "TechnologyEvent_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_TechnologyLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:TechnologyEvent ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Technology Event" ;
+.
+po:TechnologyFunction
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "TechnologyFunction.png" ;
+  po:paletteConstructHasPaletteThumbnail "TechnologyFunction_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_TechnologyLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:TechnologyFunction ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Technology Function" ;
+.
+po:TechnologyInteraction
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "TechnologyInteraction.png" ;
+  po:paletteConstructHasPaletteThumbnail "TechnologyInteraction_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_TechnologyLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:TechnologyInteraction ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Technology Interaction" ;
+.
 po:TechnologyInterface
   a po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -3707,6 +3991,38 @@ po:TechnologyInterface
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage false ;
   rdfs:label "Technology Interface" ;
+.
+po:TechnologyPath
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "TechnologyPath.png" ;
+  po:paletteConstructHasPaletteThumbnail "TechnologyPath_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_TechnologyLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:TechnologyPath ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Technology Path" ;
+.
+po:TechnologyProcess
+  a po:PaletteElement ;
+  po:paletteConstructHasHeight 70 ;
+  po:paletteConstructHasModelImage "TechnologyProcess.png" ;
+  po:paletteConstructHasPaletteThumbnail "TechnologyProcess_Thumbnail.png" ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_TechnologyLayer ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:TechnologyProcess ;
+  po:paletteElementBackgroundColor "#c9dcf5" ;
+  po:paletteElementIconPosition "top-right" ;
+  po:paletteElementLabelPosition "inside" ;
+  po:paletteElementShape "roundrectangle" ;
+  po:paletteElementUsesImage false ;
+  rdfs:label "Technology Process" ;
 .
 po:TechnologyService
   a po:PaletteElement ;
@@ -4505,13 +4821,18 @@ bpmn:UserTask
   rdfs:range xsd:string ;
   rdfs:range true ;
 .
+archi:ApplicationBehaviourElement
+  a owl:Class ;
+  rdfs:label "Behaviour element 2" ;
+  rdfs:subClassOf archi:BehaviourElement ;
+.
 archi:ApplicationCollaboration
   a owl:Class ;
   rdfs:comment """Archimate V1.0 Application Layer Concept.
 \"A unit of behavior jointly performed by two or more collaborating components.\" (OpenGroup 2009)""" ;
   rdfs:comment """Archimate V2.1
 \"An application interaction is defined as the behavoir element that describes the behavoir an application collaboration\" (OpenGroup 2013, p.40).""" ;
-  rdfs:subClassOf archi:BehaviourElement ;
+  rdfs:subClassOf archi:ApplicationBehaviourElement ;
 .
 archi:ApplicationEvent
   a owl:Class ;
@@ -4519,7 +4840,109 @@ archi:ApplicationEvent
 \"A coherent group of internal behavior of a component.\" (OpenGroup 2009)""" ;
   rdfs:comment """Archimate V2.1
 \"Application function is defined as behavoir element that groups automated behavoir that can be perfomed by an application component\" (OpenGroup 2013, p.39).""" ;
+  rdfs:subClassOf archi:ApplicationBehaviourElement ;
+.
+archi:ApplicationFunction
+  rdfs:subClassOf archi:ApplicationBehaviourElement ;
+.
+archi:ApplicationInteraction
+  rdfs:subClassOf archi:ApplicationBehaviourElement ;
+.
+archi:DistributionNetwork
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Technology Layer Concept.
+\"A physical piece of information that is used or produced in a software development process, or by deployment and operation of a system.\" (OpenGroup 2009)""" ;
+  rdfs:comment "Possibility to link data to a concrete system, e.g. client-name is data element, client_name could be a CRM database entity." ;
+  rdfs:subClassOf archi:PhysicalElement ;
+.
+archi:Equipment
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Technology Layer Concept.
+\"A physical piece of information that is used or produced in a software development process, or by deployment and operation of a system.\" (OpenGroup 2009)""" ;
+  rdfs:comment "Possibility to link data to a concrete system, e.g. client-name is data element, client_name could be a CRM database entity." ;
+  rdfs:subClassOf archi:PhysicalElement ;
+.
+archi:Facility
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Technology Layer Concept.
+\"A physical piece of information that is used or produced in a software development process, or by deployment and operation of a system.\" (OpenGroup 2009)""" ;
+  rdfs:comment "Possibility to link data to a concrete system, e.g. client-name is data element, client_name could be a CRM database entity." ;
+  rdfs:subClassOf archi:PhysicalElement ;
+.
+archi:Gap
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Technology Layer Concept.
+\"A physical piece of information that is used or produced in a software development process, or by deployment and operation of a system.\" (OpenGroup 2009)""" ;
+  rdfs:comment "Possibility to link data to a concrete system, e.g. client-name is data element, client_name could be a CRM database entity." ;
+  rdfs:subClassOf archi:MigrationElement ;
+.
+archi:InfrastructureFunction
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/eo#InfrastructureElement> ;
+.
+archi:Material
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Technology Layer Concept.
+\"A physical piece of information that is used or produced in a software development process, or by deployment and operation of a system.\" (OpenGroup 2009)""" ;
+  rdfs:comment "Possibility to link data to a concrete system, e.g. client-name is data element, client_name could be a CRM database entity." ;
+  rdfs:subClassOf archi:PhysicalElement ;
+.
+archi:MigrationElement
+  a owl:Class ;
+  rdfs:label "Migration Element" ;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/eo#EnterpriseObject> ;
+.
+archi:PhysicalElement
+  a owl:Class ;
+  rdfs:label "Enterprise object 1" ;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/eo#EnterpriseObject> ;
+.
+archi:Plateau
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Technology Layer Concept.
+\"A physical piece of information that is used or produced in a software development process, or by deployment and operation of a system.\" (OpenGroup 2009)""" ;
+  rdfs:comment "Possibility to link data to a concrete system, e.g. client-name is data element, client_name could be a CRM database entity." ;
+  rdfs:subClassOf archi:MigrationElement ;
+.
+archi:TechnologyBehaviourElement
+  a owl:Class ;
+  rdfs:label "Behaviour element 2" ;
   rdfs:subClassOf archi:BehaviourElement ;
+.
+archi:TechnologyCollaboration
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Technology Layer Concept.
+\"A computational resource upon which artifacts may be deployed for execution.\" (OpenGroup 2009)""" ;
+  rdfs:subClassOf archi:TechnologyBehaviourElement ;
+.
+archi:TechnologyEvent
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Technology Layer Concept.
+\"A computational resource upon which artifacts may be deployed for execution.\" (OpenGroup 2009)""" ;
+  rdfs:subClassOf archi:TechnologyBehaviourElement ;
+.
+archi:TechnologyFunction
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Technology Layer Concept.
+\"A computational resource upon which artifacts may be deployed for execution.\" (OpenGroup 2009)""" ;
+  rdfs:subClassOf archi:TechnologyBehaviourElement ;
+.
+archi:TechnologyInteraction
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Technology Layer Concept.
+\"A computational resource upon which artifacts may be deployed for execution.\" (OpenGroup 2009)""" ;
+  rdfs:subClassOf archi:TechnologyBehaviourElement ;
+.
+archi:TechnologyPath
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Technology Layer Concept.
+\"A computational resource upon which artifacts may be deployed for execution.\" (OpenGroup 2009)""" ;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/eo#InfrastructureElement> ;
+.
+archi:TechnologyProcess
+  a owl:Class ;
+  rdfs:comment """Archimate V1.0 Technology Layer Concept.
+\"A computational resource upon which artifacts may be deployed for execution.\" (OpenGroup 2009)""" ;
+  rdfs:subClassOf archi:TechnologyBehaviourElement ;
 .
 <http://ikm-group.ch/ontology-based-modelling-environment>
   owl:imports <http://ikm-group.ch/archiMEO/BPMN> ;
