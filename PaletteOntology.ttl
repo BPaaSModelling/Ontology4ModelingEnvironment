@@ -87,19 +87,6 @@ po:AccelerationArrow
   a po:ArrowHead ;
   rdfs:label "AccelerationArrow" ;
 .
-po:Access
-  a po:PaletteConnector ;
-  po:paletteConnectorArrowBaseUsesImage true ;
-  po:paletteConnectorConfiguresArrowStroke po:Dash ;
-  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
-  po:paletteConstructHasHeight 50 ;
-  po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
-  po:paletteConstructIsHiddenFromPalette false ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Access ;
-  po:paletteElementUsesImage true ;
-  rdfs:label "Access" ;
-.
 po:Accessory
   a po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
@@ -193,6 +180,19 @@ po:AdministrativeStaffRole
   po:paletteConstructIsHiddenFromPalette false ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:AdministrativeStaffRole ;
   rdfs:label "Administrative Staff Role" ;
+.
+po:Aggregation
+  a archi:Aggregation ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConnectorConfiguresArrowStroke po:Dash ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Access ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Aggregation" ;
 .
 po:Airport
   a po:PaletteElement ;
@@ -390,6 +390,149 @@ po:ArchiMate_TechnologyLayer
   po:paletteCategoryIsShownInModelingView lo:ArchiMateView ;
   po:paletteCategoryOrderNumber 3 ;
   rdfs:label "Technology Layer" ;
+.
+po:Archi_Access
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConnectorConfiguresArrowStroke po:Dash ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Access ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Access" ;
+.
+po:Archi_Aggregation
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConnectorConfiguresArrowStroke po:Dot ;
+  po:paletteConnectorConfiguresToArrowHead po:Triangle ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Aggregation ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Aggregation" ;
+.
+po:Archi_Assignment
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConnectorConfiguresArrowStroke po:Dash ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Assignment ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Assignment" ;
+.
+po:Archi_Association
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConnectorConfiguresArrowStroke po:Dash ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Association ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Association" ;
+.
+po:Archi_Composition
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConnectorConfiguresArrowStroke po:Single ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Composition ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Composition" ;
+.
+po:Archi_Flow
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConnectorConfiguresArrowStroke po:Dash ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Flow ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Flow" ;
+.
+po:Archi_Junction
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConnectorConfiguresArrowStroke po:Dash ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Junction ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Junction" ;
+.
+po:Archi_Realisation
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConnectorConfiguresArrowStroke po:Dot ;
+  po:paletteConnectorConfiguresToArrowHead po:Triangle ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Realisation ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Realisation" ;
+.
+po:Archi_Serving
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConnectorConfiguresArrowStroke po:Single ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Serving ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Serving" ;
+.
+po:Archi_Specialisation
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConnectorConfiguresArrowStroke po:Dash ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Specialisation ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Specialisation" ;
+.
+po:Archi_Triggering
+  a po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage true ;
+  po:paletteConnectorConfiguresArrowStroke po:Dash ;
+  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
+  po:paletteConstructHasHeight 50 ;
+  po:paletteConstructHasWidth 100 ;
+  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Triggering ;
+  po:paletteElementUsesImage true ;
+  rdfs:label "Triggering" ;
 .
 po:Architecture
   a po:PaletteElement ;
@@ -3286,19 +3429,6 @@ po:PrepareRehabAdmission
   rdfs:label """Prepare Rehab Admission
  """ ;
 .
-po:Realisation
-  a po:PaletteConnector ;
-  po:paletteConnectorArrowBaseUsesImage true ;
-  po:paletteConnectorConfiguresArrowStroke po:Dot ;
-  po:paletteConnectorConfiguresToArrowHead po:Triangle ;
-  po:paletteConstructHasHeight 50 ;
-  po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
-  po:paletteConstructIsHiddenFromPalette false ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Realisation ;
-  po:paletteElementUsesImage true ;
-  rdfs:label "Realisation" ;
-.
 po:ReceiveMessageTask
   a po:PaletteElement ;
   po:paletteConstructHasHeight 70 ;
@@ -3563,19 +3693,6 @@ po:ServiceTask_4DSML4PTM
   po:paletteElementShape "roundrectangle" ;
   po:paletteElementUsesImage false ;
   rdfs:label "Service Message Task" ;
-.
-po:Serving
-  a po:PaletteConnector ;
-  po:paletteConnectorArrowBaseUsesImage true ;
-  po:paletteConnectorConfiguresArrowStroke po:Single ;
-  po:paletteConnectorConfiguresToArrowHead po:OpenTriangle ;
-  po:paletteConstructHasHeight 50 ;
-  po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:ArchiMate_Connectors ;
-  po:paletteConstructIsHiddenFromPalette false ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct archi:Serving ;
-  po:paletteElementUsesImage true ;
-  rdfs:label "Serving" ;
 .
 po:ShippingDock
   a po:PaletteElement ;
