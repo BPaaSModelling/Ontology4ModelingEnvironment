@@ -1,0 +1,71 @@
+@prefix lo:  <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
+@prefix po:  <http://fhnw.ch/modelingEnvironment/PaletteOntology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix do:  <http://fhnw.ch/modelingEnvironment/DomainOntology#> .
+
+## --------- NEW ONGTOLOGY AND VIEW
+lo:NewEmptyModellingLanguage 
+    rdf:type lo:ModelingLanguage ;
+    lo:hasModelingView lo:NewEmptyModellingLanguageView ;
+    rdfs:label "New Empty Language" .
+
+lo:NewEmptyModellingLanguageView
+    rdf:type lo:ModelingView ;
+    lo:isMainModelingView "true"^^xsd:boolean ;
+    lo:viewIsPartOfModelingLanguage lo:NewEmptyModellingLanguage ;
+    rdfs:label "New Empty Language View" .
+
+## ---------- EMPTY DEFAULT CATEGORY
+po:ExampleElementCategory
+    rdf:type po:PaletteCategory ;
+    po:paletteCategoryIsShownInModelingView lo:NewEmptyModellingLanguageView ;
+    po:paletteCategoryOrderNumber 1 ;
+    rdfs:label "Example Empty Elements Category" .
+
+po:ExampleConnectorCategory
+    rdf:type po:PaletteCategory ;
+    po:paletteCategoryIsShownInModelingView lo:NewEmptyModellingLanguageView ;
+    po:paletteCategoryOrderNumber 2 ;
+    rdfs:label "Example Empty Connector Category" .
+
+## ----------- DEFINE WHAT SHOWN IN CATEGORIES
+po:ExampleElement
+    rdf:type po:PaletteElement ;
+    po:paletteConstructBelongsToModelingView lo:NewEmptyModellingLanguageView ;
+    po:paletteConstructIsGroupedInPaletteCategory po:ExampleElementCategory ;
+    po:paletteConstructIsRelatedToModelingLanguageConstruct lo:ExamplePaletteElementDomainConcept ;
+    po:paletteConstructHasModelImage "ExampleModellingElement.png" ;
+    po:paletteConstructHasWidth 120 ;
+    po:paletteConstructHasHeight 70 ;
+    po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
+    rdfs:label "Example Element" .
+
+po:ExampleConnector
+    rdf:type po:PaletteConnector ;
+    po:paletteConstructBelongsToModelingView lo:NewEmptyModellingLanguageView ;
+    po:paletteConstructIsGroupedInPaletteCategory po:ExampleConnectorCategory ;
+    po:paletteConstructIsRelatedToModelingLanguageConstruct lo:ExamplePaletteConnectorDomainConceptRelationship ;
+    rdfs:label "Example Connector" ;
+    po:paletteConnectorArrowBaseUsesImage true ;
+    po:paletteConnectorConfiguresArrowStroke po:Single ;
+    po:paletteConnectorConfiguresToArrowHead po:Triangle ;
+    po:paletteConstructHasHeight 50 ;
+    po:paletteConstructHasModelImage "ExampleConnectorElement.png" ;
+    po:paletteConstructHasPaletteThumbnail "Thumbnail_ExampleConnectorElement.png" ;
+    po:paletteConstructHasWidth 100 ;
+    po:paletteConstructIsHiddenFromPalette false ;
+    po:paletteElementUsesImage true .
+
+## ---------- EMPTY/EXAMPLE DOMAIN ONTOLOGY CONCEPTS & RELATIONSHIPS
+lo:ExamplePaletteElementDomainConcept
+    a owl:Class ;
+    rdfs:subClassOf lo:ModelingElement ;
+    rdfs:label "Example domain ontology concept for an example modelling element" .
+
+lo:ExamplePaletteConnectorDomainConceptRelationship
+    a owl:Class ;
+    rdfs:subClassOf lo:ModelingRelation ;
+    rdfs:label "Example domain ontology relationship for an example modelling relationship" .
